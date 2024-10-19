@@ -1,4 +1,4 @@
 [submodule "MUK_docbook/xsl"]
-	path = MUK_docbook/xsl
+	path = DA_docbook/xsl
 	url = https://github.com/MarkupUK/MUK-xsl.git
 	branch = main

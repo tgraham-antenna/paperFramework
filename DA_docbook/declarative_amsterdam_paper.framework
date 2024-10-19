@@ -20,7 +20,7 @@
 											<Integer>-1</Integer>
 										</field>
 										<field name="value">
-											<String>Markup UK Paper</String>
+											<String>Declarative Amsterdam Paper</String>
 										</field>
 										<field name="patchHandling">
 											<String>set</String>
@@ -105,7 +105,7 @@
 											<Integer>-1</Integer>
 										</field>
 										<field name="value">
-											<String>Markup UK uses DocBook as its preferred language for paper submission.
+											<String>Declarative Amsterdam uses DocBook as its preferred language for paper submission.
 
 Docbook is a markup language for technical documentation, originally intended for authoring technical documents</String>
 										</field>
@@ -274,222 +274,6 @@ Docbook is a markup language for technical documentation, originally intended fo
 											<String>scenarios</String>
 										</field>
 										<field name="index">
-											<Integer>0</Integer>
-										</field>
-										<field name="value">
-											<null/>
-										</field>
-										<field name="patchHandling">
-											<String>removeIndex</String>
-										</field>
-										<field name="anchor">
-											<String>DocBook WebHelp Classic</String>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>scenarios</String>
-										</field>
-										<field name="index">
-											<Integer>0</Integer>
-										</field>
-										<field name="value">
-											<scenario>
-												<field name="advancedOptionsMap">
-													<null/>
-												</field>
-												<field name="name">
-													<String>Markup UK Paper</String>
-												</field>
-												<field name="baseURL">
-													<String></String>
-												</field>
-												<field name="footerURL">
-													<String></String>
-												</field>
-												<field name="fOPMethod">
-													<String>@PDF</String>
-												</field>
-												<field name="fOProcessorName">
-													<String>Antenna House</String>
-												</field>
-												<field name="headerURL">
-													<String></String>
-												</field>
-												<field name="inputXSLURL">
-													<String>${framework}/xsl/muk-proceedings-db.xsl</String>
-												</field>
-												<field name="inputXMLURL">
-													<String>${currentFileURL}</String>
-												</field>
-												<field name="defaultScenario">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="isFOPPerforming">
-													<Boolean>true</Boolean>
-												</field>
-												<field name="type">
-													<String>XSL</String>
-												</field>
-												<field name="saveAs">
-													<Boolean>true</Boolean>
-												</field>
-												<field name="openInBrowser">
-													<Boolean>true</Boolean>
-												</field>
-												<field name="outputResource">
-													<String>${cfd}/out/pdf/${cfn}.pdf</String>
-												</field>
-												<field name="openOtherLocationInBrowser">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="locationToOpenInBrowserURL">
-													<null/>
-												</field>
-												<field name="openInEditor">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="showInHTMLPane">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="showInXMLPane">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="showInSVGPane">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="showInResultSetPane">
-													<Boolean>false</Boolean>
-												</field>
-												<field name="useXSLTInput">
-													<Boolean>true</Boolean>
-												</field>
-												<field name="xsltParams">
-													<list>
-														<transformationParameter>
-															<field name="paramDescription">
-																<paramDescriptor>
-																	<field name="localName">
-																		<String>fo.processor</String>
-																	</field>
-																	<field name="prefix">
-																		<null/>
-																	</field>
-																	<field name="namespace">
-																		<null/>
-																	</field>
-																</paramDescriptor>
-															</field>
-															<field name="value">
-																<String>ahf</String>
-															</field>
-															<field name="hasXPathValue">
-																<Boolean>false</Boolean>
-															</field>
-															<field name="isStatic">
-																<Boolean>false</Boolean>
-															</field>
-														</transformationParameter>
-														<transformationParameter>
-															<field name="paramDescription">
-																<paramDescriptor>
-																	<field name="localName">
-																		<String>highlight.source</String>
-																	</field>
-																	<field name="prefix">
-																		<null/>
-																	</field>
-																	<field name="namespace">
-																		<null/>
-																	</field>
-																</paramDescriptor>
-															</field>
-															<field name="value">
-																<String>1</String>
-															</field>
-															<field name="hasXPathValue">
-																<Boolean>false</Boolean>
-															</field>
-															<field name="isStatic">
-																<Boolean>false</Boolean>
-															</field>
-														</transformationParameter>
-														<transformationParameter>
-															<field name="paramDescription">
-																<paramDescriptor>
-																	<field name="localName">
-																		<String>highlight.xslthl.config</String>
-																	</field>
-																	<field name="prefix">
-																		<null/>
-																	</field>
-																	<field name="namespace">
-																		<null/>
-																	</field>
-																</paramDescriptor>
-															</field>
-															<field name="value">
-																<String>${framework(Markup UK Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
-															</field>
-															<field name="hasXPathValue">
-																<Boolean>false</Boolean>
-															</field>
-															<field name="isStatic">
-																<Boolean>false</Boolean>
-															</field>
-														</transformationParameter>
-														<transformationParameter>
-															<field name="paramDescription">
-																<paramDescriptor>
-																	<field name="localName">
-																		<String>muk-xsl.dir</String>
-																	</field>
-																	<field name="prefix">
-																		<null/>
-																	</field>
-																	<field name="namespace">
-																		<null/>
-																	</field>
-																</paramDescriptor>
-															</field>
-															<field name="value">
-																<String>${framework}/xsl</String>
-															</field>
-															<field name="hasXPathValue">
-																<Boolean>false</Boolean>
-															</field>
-															<field name="isStatic">
-																<Boolean>false</Boolean>
-															</field>
-														</transformationParameter>
-													</list>
-												</field>
-												<field name="cascadingStylesheets">
-													<String-array/>
-												</field>
-												<field name="xslTransformer">
-													<String>Saxon6.5.5</String>
-												</field>
-												<field name="extensionURLs">
-													<String-array>
-														<String>${baseFramework}/xsl/extensions/xslthl*.jar</String>
-														<String>${baseFramework}/xsl/extensions/saxon65.jar</String>
-													</String-array>
-												</field>
-											</scenario>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>scenarios</String>
-										</field>
-										<field name="index">
 											<Integer>1</Integer>
 										</field>
 										<field name="value">
@@ -498,7 +282,7 @@ Docbook is a markup language for technical documentation, originally intended fo
 													<null/>
 												</field>
 												<field name="name">
-													<String>Markup UK Paper - FO</String>
+													<String>Declarative Amsterdam Paper - FO</String>
 												</field>
 												<field name="baseURL">
 													<String></String>
@@ -697,7 +481,7 @@ Docbook is a markup language for technical documentation, originally intended fo
 													<null/>
 												</field>
 												<field name="name">
-													<String>Markup UK Paper - GUI (Windows)</String>
+													<String>Declarative Amsterdam Paper - GUI (Windows)</String>
 												</field>
 												<field name="baseURL">
 													<String></String>
@@ -827,7 +611,254 @@ Docbook is a markup language for technical documentation, originally intended fo
 																</paramDescriptor>
 															</field>
 															<field name="value">
-																<String>${framework(Markup UK Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
+																<String>${framework(Declarative Amsterdam Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>insert.xref.page.number</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>0</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>muk-xsl.dir</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>${framework}/xsl</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+													</list>
+												</field>
+												<field name="cascadingStylesheets">
+													<String-array/>
+												</field>
+												<field name="xslTransformer">
+													<String>Saxon6.5.5</String>
+												</field>
+												<field name="extensionURLs">
+													<String-array>
+														<String>${baseFramework}/xsl/extensions/xslthl*.jar</String>
+														<String>${baseFramework}/xsl/extensions/saxon65.jar</String>
+													</String-array>
+												</field>
+											</scenario>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>scenarios</String>
+										</field>
+										<field name="index">
+											<Integer>3</Integer>
+										</field>
+										<field name="value">
+											<scenario>
+												<field name="advancedOptionsMap">
+													<null/>
+												</field>
+												<field name="name">
+													<String>Declarative Amsterdam Paper</String>
+												</field>
+												<field name="baseURL">
+													<String></String>
+												</field>
+												<field name="footerURL">
+													<String></String>
+												</field>
+												<field name="fOPMethod">
+													<String>@PDF</String>
+												</field>
+												<field name="fOProcessorName">
+													<String>Antenna House</String>
+												</field>
+												<field name="headerURL">
+													<String></String>
+												</field>
+												<field name="inputXSLURL">
+													<String>${framework}/xsl/muk-proceedings-db.xsl</String>
+												</field>
+												<field name="inputXMLURL">
+													<String>${currentFileURL}</String>
+												</field>
+												<field name="defaultScenario">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="isFOPPerforming">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="type">
+													<String>XSL</String>
+												</field>
+												<field name="saveAs">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="openInBrowser">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="outputResource">
+													<String>${cfd}/out/pdf/${cfn}.pdf</String>
+												</field>
+												<field name="openOtherLocationInBrowser">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="locationToOpenInBrowserURL">
+													<null/>
+												</field>
+												<field name="openInEditor">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showInHTMLPane">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showInXMLPane">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showInSVGPane">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="showInResultSetPane">
+													<Boolean>false</Boolean>
+												</field>
+												<field name="useXSLTInput">
+													<Boolean>true</Boolean>
+												</field>
+												<field name="xsltParams">
+													<list>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>fo.processor</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>ahf</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>highlight.source</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>1</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>highlight.xslthl.config</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>${framework(Declarative Amsterdam Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
+															</field>
+															<field name="hasXPathValue">
+																<Boolean>false</Boolean>
+															</field>
+															<field name="isStatic">
+																<Boolean>false</Boolean>
+															</field>
+														</transformationParameter>
+														<transformationParameter>
+															<field name="paramDescription">
+																<paramDescriptor>
+																	<field name="localName">
+																		<String>insert.xref.page.number</String>
+																	</field>
+																	<field name="prefix">
+																		<null/>
+																	</field>
+																	<field name="namespace">
+																		<null/>
+																	</field>
+																</paramDescriptor>
+															</field>
+															<field name="value">
+																<String>0</String>
 															</field>
 															<field name="hasXPathValue">
 																<Boolean>false</Boolean>
@@ -1032,7 +1063,7 @@ Docbook is a markup language for technical documentation, originally intended fo
 													<String>Validation_scenario</String>
 												</field>
 												<field name="name">
-													<String>DocBook 5 + MUK Schematron</String>
+													<String>DocBook 5 + DA Schematron</String>
 												</field>
 											</validationScenario>
 										</field>
@@ -1068,7 +1099,7 @@ Docbook is a markup language for technical documentation, originally intended fo
 											<Integer>0</Integer>
 										</field>
 										<field name="value">
-											<String>DocBook 5 + MUK Schematron</String>
+											<String>DocBook 5 + DA Schematron</String>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
@@ -1086,7 +1117,7 @@ Docbook is a markup language for technical documentation, originally intended fo
 										</field>
 										<field name="value">
 											<list>
-												<String>Markup UK Paper</String>
+												<String>Declarative Amsterdam Paper</String>
 											</list>
 										</field>
 										<field name="patchHandling">
@@ -3991,6 +4022,19 @@ oxy:allows-child-element("*:equation")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
+														<String>oxy:current-selected-element()[self::*:orderedlist] |
+oxy:current-selected-element()[self::*:itemizedlist] |
+oxy:current-selected-element()[self::*:variablelist]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.sort.DocbookListSortOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
 														<String>oxy:current-selected-element()[self::*:tbody[descendant-or-self::*:row]] |
 oxy:current-selected-element()[self::*:table[descendant-or-self::*:row]] |
 oxy:current-selected-element()[self::*:thead[descendant-or-self::*:row]] |
@@ -4023,10 +4067,7 @@ ancestor-or-self::node()[self::*:tbody[descendant::*:tr] | self::*:tfoot[descend
 												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>oxy:current-selected-element()[self::*:orderedlist] |
-oxy:current-selected-element()[self::*:itemizedlist] |
-oxy:current-selected-element()[self::*:variablelist] |
-ancestor-or-self::*:orderedlist | ancestor-or-self::*:itemizedlist | ancestor-or-self::*:variablelist</String>
+														<String>ancestor-or-self::*:orderedlist | ancestor-or-self::*:itemizedlist | ancestor-or-self::*:variablelist</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap/>
@@ -13005,7 +13046,7 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 									<null/>
 								</field>
 								<field name="name">
-									<String>DocBook WebHelp Classic</String>
+									<String>DocBook WebHelp Classic (Deprecated)</String>
 								</field>
 								<field name="baseURL">
 									<null/>
@@ -13096,10 +13137,7 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 										<String>${oxygenHome}/lib/*xerces*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*6*.jar</String>
 										<String>${oxygenHome}/lib/xmlresolver*.jar</String>
-										<String>${oxygenHome}/lib/*saxon*11*.jar</String>
-										<String>${oxygenHome}/lib/*saxon*10*.jar</String>
-										<String>${oxygenHome}/lib/*saxon*9*.jar</String>
-										<String>${oxygenHome}/lib/xml-apis.jar</String>
+										<String>${oxygenHome}/lib/*saxon*12*.jar</String>
 										<String>${oxygenHome}/lib/xml-apis-ext.jar</String>
 										<String>${oxygenHome}/lib/oxygen-patched-slf4j.jar</String>
 										<String>${oxygenHome}/lib/logback-classic-*.jar</String>
@@ -15489,7 +15527,6 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 										<String>${oxygenHome}/lib/*jing*.jar</String>
 										<String>${oxygenHome}/lib/*xerces*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*6*.jar</String>
-										<String>${oxygenHome}/lib/xml-apis.jar</String>
 										<String>${oxygenHome}/lib/xml-apis-ext.jar</String>
 										<String>${oxygenHome}/lib/oxygen-patched-slf4j.jar</String>
 										<String>${oxygenHome}/lib/logback-classic-*.jar</String>
@@ -16215,7 +16252,6 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 										<String>${oxygenHome}/lib/*jing*.jar</String>
 										<String>${oxygenHome}/lib/*xerces*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*6*.jar</String>
-										<String>${oxygenHome}/lib/xml-apis.jar</String>
 										<String>${oxygenHome}/lib/xml-apis-ext.jar</String>
 										<String>${oxygenHome}/lib/oxygen-patched-slf4j.jar</String>
 										<String>${oxygenHome}/lib/logback-classic-*.jar</String>
@@ -16684,6 +16720,7 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 										<String>${oxygenHome}/lib/oxygen-basic-utilities.jar</String>
 										<String>${oxygenHome}/lib/oxygen-editor-variables-parser.jar</String>
 										<String>${oxygenHome}/lib/xmlresolver*.jar</String>
+										<String>${oxygenHome}/lib/*saxon*12*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*11*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*10*.jar</String>
 										<String>${oxygenHome}/lib/*saxon*9*.jar</String>
@@ -16701,7 +16738,6 @@ or oxy:current-selected-element()[ancestor-or-self::*:imageobject[*:imagedata[@f
 										<String>${oxygenHome}/lib/*commons-io*.jar</String>
 										<String>${oxygenHome}/lib/*batik*.jar</String>
 										<String>${oxygenHome}/lib/*resolver.jar</String>
-										<String>${oxygenHome}/lib/xml-apis.jar</String>
 										<String>${oxygenHome}/lib/*jeuclid*.jar</String>
 									</String-array>
 								</field>

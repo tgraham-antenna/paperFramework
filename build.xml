@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MUK_docbook" basedir="." default="release"
+<project name="DA_docbook" basedir="." default="release"
 	 xmlns:if="ant:if"
 	 xmlns:unless="ant:unless">
 <description>Targets used when developing
-'MUK_docbook' and making a release.</description>
+'DA_docbook' and making a release.</description>
 <!--
-     Copyright 2021 Markup UK Ltd.
+     Copyright 2021 Declarative Amsterdam Ltd.
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ BEFORE making a release on GitHub:
  - Make sure that ${version} in 'properties.xml' is correct
  - Run the 'release' target with '-Dforce=yes'
  - Commit build.properties and the generated files with a
-   'Releasing MUK_docbook x.y.z.' commit message
+   'Releasing DA_docbook x.y.z.' commit message
  - Push the commits to GitHub.
 
 RELEASING on GitHub
@@ -37,8 +37,8 @@ RELEASING on GitHub
    https://github.com/MarkupUK/paperFramework/releases/new
  - In the 'Tag version' field, enter 'v' followed by the ${version}
    value; for example, 'v1.0.0'
- - In the 'Release title' field, enter 'MUK_docbook' followed by
-   the ${version} value; for example, 'MUK_docbook 1.0.0'
+ - In the 'Release title' field, enter 'DA_docbook' followed by
+   the ${version} value; for example, 'DA_docbook 1.0.0'
  - In the 'Describe this release' field, describe this release
  - Attach the Zip file for the current release that was generated in
    the local 'releases' folder to the issue by either dragging it to
@@ -52,10 +52,10 @@ AFTER making a release on GitHub:
    versions of files.
 -->
 
-<dirname property="MUK_docbook.basedir" file="${ant.file.MUK_docbook}"/>
+<dirname property="DA_docbook.basedir" file="${ant.file.DA_docbook}"/>
 
-<pathconvert property="MUK_docbook.basedir.converted" dirsep="/">
-  <path location="${MUK_docbook.basedir}" />
+<pathconvert property="DA_docbook.basedir.converted" dirsep="/">
+  <path location="${DA_docbook.basedir}" />
   <!-- Ant under cygwin uses a lowercase drive letter, which Java
        programs don't always recognise as a drive letter, so
        translate. -->
@@ -125,12 +125,12 @@ AFTER making a release on GitHub:
 <target name="updateSite.xml" depends="updateSite.xml.uptodate"
 	unless="updateSite.xml.uptodate"
 	description="Update the version information in 'updateSite.xml'.">
-  <replaceregexp file="${MUK_docbook.basedir.converted}/updateSite.xml"
+  <replaceregexp file="${DA_docbook.basedir.converted}/updateSite.xml"
 		 encoding="UTF-8">
     <regexp pattern="&lt;xt:version>[^&lt;]+&lt;/xt:version>" />
     <substitution expression="&lt;xt:version>${version}&lt;/xt:version>"/>
   </replaceregexp>
-  <replaceregexp file="${MUK_docbook.basedir.converted}/updateSite.xml"
+  <replaceregexp file="${DA_docbook.basedir.converted}/updateSite.xml"
 		 encoding="UTF-8">
     <regexp pattern='releases/download/[^"]+' />
     <substitution
@@ -140,9 +140,9 @@ AFTER making a release on GitHub:
 
 <target name="project.zxpr"
 	description="Make a Zip archive of the project file.">
-  <mkdir dir="${MUK_docbook.basedir.converted}/${ant.project.name}/templates" />
-  <zip destfile="${MUK_docbook.basedir.converted}/${ant.project.name}/templates/${ant.project.name}.zxpr"
-       basedir="${MUK_docbook.basedir.converted}/project"
+  <mkdir dir="${DA_docbook.basedir.converted}/${ant.project.name}/templates" />
+  <zip destfile="${DA_docbook.basedir.converted}/${ant.project.name}/templates/${ant.project.name}.zxpr"
+       basedir="${DA_docbook.basedir.converted}/project"
        excludes="**"
        update="true">
     <zipfileset dir="project"
@@ -152,38 +152,38 @@ AFTER making a release on GitHub:
 
 <target name="framework.zip" depends="updateSite.xml"
 	description="Make a Zip archive of just the oXygen framework.">
-  <mkdir dir="${MUK_docbook.basedir.converted}/releases" />
+  <mkdir dir="${DA_docbook.basedir.converted}/releases" />
   <!-- Delete Zip file of current version if it exists. -->
-  <delete file="${MUK_docbook.basedir.converted}/releases/${ant.project.name}-framework-${version}.zip"
+  <delete file="${DA_docbook.basedir.converted}/releases/${ant.project.name}-framework-${version}.zip"
 	  quiet="true"
 	  failonerror="false" />
-  <zip destfile="${MUK_docbook.basedir.converted}/releases/${ant.project.name}-framework-${version}.zip"
-       includes="MUK_docbook/**"
+  <zip destfile="${DA_docbook.basedir.converted}/releases/${ant.project.name}-framework-${version}.zip"
+       includes="DA_docbook/**"
        excludes="**/.git*, **/jython.jar, **/out"
-       basedir="${MUK_docbook.basedir.converted}"
+       basedir="${DA_docbook.basedir.converted}"
        level="9"
        update="false">
     <zipfileset dir="."
 		includes="LICENSE"
 		prefix="${ant.project.name}" />
-    <!--<zipfileset dir="MUK_docbook" />
+    <!--<zipfileset dir="DA_docbook" />
 		includes="markup_uk_paper.framework, paper.sch"
 		prefix="${ant.project.name}" />
-    <zipfileset dir="MUK_docbook/icons"
+    <zipfileset dir="DA_docbook/icons"
 		includes="*.*"
 		prefix="${ant.project.name}/icons" />
-    <zipfileset dir="MUK_docbook/templates"
+    <zipfileset dir="DA_docbook/templates"
 		includes="*.*" excludes="*~"
 		prefix="${ant.project.name}/templates" />
-    <fileset dir="MUK_docbook/xsl"
+    <fileset dir="DA_docbook/xsl"
 		includes="**/*" />-->
   </zip>
 </target>
 
 <target name="release"
 	depends="updateSite.xml, project.zxpr, framework.zip">
-  <copy file="${MUK_docbook.basedir.converted}/resources/formatter-options/formatter-options.xml"
-	todir="${MUK_docbook.basedir.converted}/releases" />
+  <copy file="${DA_docbook.basedir.converted}/resources/formatter-options/formatter-options.xml"
+	todir="${DA_docbook.basedir.converted}/releases" />
 </target>
 
 <!-- Utility targets. -->

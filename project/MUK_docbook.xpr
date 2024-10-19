@@ -14,7 +14,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Markup UK Paper - FO</String>
+                                        <String>Declarative Amsterdam Paper - FO</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -34,7 +34,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Markup UK Paper</String>
+                                        <String>Declarative Amsterdam Paper</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -459,7 +459,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>Markup UK Paper</String>
+                                    <String>Declarative Amsterdam Paper</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -733,7 +733,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>${framework(Markup UK Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
+                                                <String>${framework(Declarative Amsterdam Paper)}/xsl/docbook-xsl-1.79.1/highlighting/xslthl-config.xml</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
@@ -757,7 +757,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>${framework(Markup UK Paper)}/xsl</String>
+                                                <String>${framework(Declarative Amsterdam Paper)}/xsl</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
@@ -810,7 +810,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>Markup UK Paper - FO</String>
+                                    <String>Declarative Amsterdam Paper - FO</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -1162,7 +1162,7 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="MUK_docbook.xpr">
+    <projectTree name="DA_docbook.xpr">
         <folder path="."/>
     </projectTree>
 </project>
