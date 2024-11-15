@@ -6,7 +6,7 @@ Developing the **DA_docbook** framework is done on a clone of the GitHub reposit
 
 1. Clone the repository and its 'DA_xsl' submodule from https://github.com/MarkupUK/paperFramework.git
    ```
-   git clone --recurse-submodules  https://github.com/MarkupUK/paperFramework.git
+   git clone --recurse-submodules  https://github.com/tgraham-antenna/paperFramework.git
    ```
 1. In Oxygen, add the directory of the Git repository as a Document Type Association framework location:
    ![](oxygen-locations.png)
